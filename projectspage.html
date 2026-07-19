@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreehari M | Projects</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="projectspage.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="box1">
+
+  <div class="page-heading">
+    <p class="eyebrow">Project Log</p>
+    <h1>Featured Builds</h1>
+  </div>
+
+  <article class="card project-card">
+    <div class="card-body">
+      <div class="project-head">
+        <h2 class="card-title">TrackSense</h2>
+      </div>
+      <p class="project-sub">IoT &amp; image-based railway track inspection</p>
+
+      <div class="tag-row">
+        <span class="tag">Ultrasonic Sensors</span>
+        <span class="tag">Live Video Streaming</span>
+        <span class="tag">Blynk IoT</span>
+        <span class="tag">Crack Detection</span>
+      </div>
+
+      <p class="card-text project-abstract">
+        <b>Abstract:</b> This system plays a pivotal role in upholding the safety and reliability of railway
+        infrastructure. Leveraging ultrasonic sensors and live video streaming, it detects cracks and anomalies
+        on the track promptly and accurately, aiding maintenance and replacement decisions. The Blynk IoT app
+        delivers real-time alert messages for a timely response to detected cracks, backed by an IoT platform
+        for data management and analysis. Continuous monitoring helps prevent derailments, reduce maintenance
+        costs and improve operational efficiency &mdash; while recorded footage of each detection, with precise
+        locations, gives maintenance teams the data they need to plan repairs effectively.
+      </p>
+
+      <div class="project-actions">
+        <a href="tracksenseimage.html" class="btn btn-primary">View Images</a>
+        <a href="SREEHARI M.pdf" target="_blank" class="btn btn-outline-primary">View Report</a>
+        <a href="TRACKSENSE___IOT___IMAGE_BASED_RAILWAY_TRACK_INSPECTION (3).pdf" target="_blank" class="btn btn-outline-primary">View Paper</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="card project-card">
+    <div class="card-body">
+      <div class="project-head">
+        <h2 class="card-title">EcoAlert</h2>
+      </div>
+      <p class="project-sub">LoRa-based smart wildlife detection &amp; alert system</p>
+
+      <div class="tag-row">
+        <span class="tag">MobileNet V2 CNN</span>
+        <span class="tag">IR Sensor</span>
+        <span class="tag">LoRa / GSM / GPS</span>
+        <span class="tag">NodeMCU</span>
+      </div>
+
+      <p class="card-text project-abstract">
+        <b>Abstract:</b> Animal-train collisions are a significant challenge in regions where animals cross
+        railway tracks, causing loss of life and damage to infrastructure. This system employs a MobileNet V2
+        CNN-based early warning system, using image processing alongside an IR sensor and camera to detect
+        animals across multiple detection units deployed along the track. A NodeMCU coordinates GSM, GPS and
+        LoRa modules to transmit an alert to the train, where an LCD display and buzzer notify the locomotive
+        pilot to take appropriate action &mdash; an efficient way to prevent collisions and enhance railway safety.
+      </p>
+
+      <div class="project-actions">
+        <a href="ecoalertimages.html" class="btn btn-primary">View Images</a>
+        <a href="Report.pdf" target="_blank" class="btn btn-outline-primary">View Report</a>
+        <a href="CNN_PROJECT_PAPER-3.pdf" target="_blank" class="btn btn-outline-primary">View Paper</a>
+      </div>
+    </div>
+  </article>
+
+
+</div>
+
+<footer class="footer">
+  <p>&copy; 2026 Sreehari M. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>
+</body>
+</html>
